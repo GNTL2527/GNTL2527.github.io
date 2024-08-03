@@ -308,3 +308,33 @@ ul li {
 }
 
 /* Ensure the main container adjusts for smaller screens */
+@media (max-width: 768px) {
+    #sideNav {
+        display: none;
+        /* Hide sidebar on mobile */
+    }
+
+    main {
+        margin-left: 0;
+        /* Remove the margin */
+        width: 100%;
+        /* Make main content take full width */
+        padding: 20px;
+        /* Add some padding */
+    }
+
+    header {
+        text-align: center;
+        /* Center the header text */
+    }
+
+    header h1 {
+        font-size: 2rem;
+        /* Adjust header font size */
+    }
+
+    header .contact-info p {
+        font-size: 0.9rem;
+        /* Adjust contact info font size */
+    }
+}
