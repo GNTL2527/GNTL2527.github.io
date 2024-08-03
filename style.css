@@ -346,8 +346,26 @@ ul li {
     }
 
     .skills-logo {
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Create two columns */
+        gap: 10px;
+        /* Adjust the spacing between items */
+        justify-items: center;
+        /* Center items horizontally */
+    }
+
+    .skill-icon img {
+        width: 2.5rem;
+        /* Adjust icon size */
+        height: 2.5rem;
+        margin-bottom: 5px;
+        /* Adjust spacing */
+    }
+
+    .skill-icon p {
+        font-size: 0.8rem;
+        /* Adjust text size */
     }
 
     .project-item {
