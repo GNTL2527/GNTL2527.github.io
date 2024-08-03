@@ -312,28 +312,36 @@ ul li {
     #sideNav {
         width: 100%;
         height: auto;
+        position: relative;
         padding-top: 0;
-        padding-bottom: 20px;
+        text-align: center;
     }
 
-    #sideNav .navbar-brand {
-        margin-top: 20px;
+    #sideNav .navbar-nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #sideNav .navbar-nav .nav-link {
+        padding: 10px;
     }
 
     main {
         margin-left: 0;
-        padding: 20px 10px;
+        padding: 20px;
         width: 100%;
     }
 
     header {
-        margin-top: 40px;
+        margin-top: 20px;
         text-align: center;
+        padding: 10px;
     }
 
     h1 {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
+        font-size: 4rem;
+        line-height: 3.5rem;
     }
 
     .contact-info {
@@ -341,8 +349,19 @@ ul li {
         margin-left: 0;
     }
 
-    h2 {
-        font-size: 2rem;
+    .project-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .project-details {
+        text-align: center;
+        max-width: 100%;
     }
 
     .skills-logo {
@@ -368,19 +387,11 @@ ul li {
         /* Adjust text size */
     }
 
-    .project-item {
-        flex-direction: column;
-        align-items: center;
+    .social-icons-section {
+        padding: 20px 10px;
     }
 
-    .project-image {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .project-details {
-        max-width: 100%;
-        text-align: center;
+    .list-social-icons {
+        justify-content: center;
     }
 }
