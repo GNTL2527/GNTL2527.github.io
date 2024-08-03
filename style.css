@@ -306,3 +306,74 @@ ul li {
 .project-details a:hover {
     text-decoration: underline;
 }
+
+/* Ensure the main container adjusts for smaller screens */
+@media (max-width: 768px) {
+    #sideNav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    #sideNav .navbar-nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #sideNav .navbar-nav .nav-link {
+        padding: 10px;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 20px;
+        width: 100%;
+    }
+
+    header {
+        margin-top: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 3.5rem;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .project-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .project-details {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .skills-logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons-section {
+        padding: 20px 10px;
+    }
+
+    .list-social-icons {
+        justify-content: center;
+    }
+}
